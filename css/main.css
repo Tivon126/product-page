@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  font-family:'Roboto', sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+body {
+font-family:'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+
+}
+
+/* INTRO */
+
+.intro {
+background-color: #E8E8E8;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.intro img 
+{
+  grid-column: 1;
+  grid-row: 1;
+}
+.intro nav {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.image img 
+{
+  width: 30%;
+  height: 30%;
+}
+
+.main {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+.main .img img {
+ text-align: right;
+}
+.main button {
+  background-color: #36C9C6;
+  color: white;
+  font-size: 2rem;
+ 
+  font-weight: 700;
+  text-align: center;
+}
+/* PURCHASE */
+
+.purchase{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  margin: auto;
+}
+.purchase img {
+  width: 100%;
+}
+.purchase button {
+  background-color: #36C9C6;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+/* STORY */
+
+.story {
+background-color: #E8E8E8;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+padding: 2rem;
+}
+
+/* MISSION */
+
+.mission {
+background-color: #E8E8E8;
+text-align: center;
+padding: 2rem;
+}
+.mission h1 {
+  
+}
+.mission p {
+   
+}
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.features h1 {
+text-align: center;
+grid-column: 1/span 3;
+}
+
+.card {
+  display: grid;
+  grid-template-column: 1fr 1fr;
+  grid-template-row: 1fr 1fr 1fr;
+}
+.card img {
+  width: 10%;
+  height: 100%;
+}
+.text {
+ 
+}
+/* PHOTOS */
+
+.photos {
+background-color: #28D7D4;
+}
+.photos img {
+  width: 30%;
+  height: 30%;
+}
+.photos h1 {
+   
+} 
+.photos
+.faq {
+  text-align: center;
+}
+.faq h1 {
+   
+}
+
+.faq h2 {
+  border-style: solid;
+ 
+}
+/* FOOTER */
+
+footer {
+  background-color: #06070E;
+}
+
+@media screen and (min-width: 40em){
+  body {
+    padding: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 60em){
+  body {
+    padding: 5rem;
+  }
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  position: relative;
+  padding: 1rem 3rem 1rem 1rem;
+  border: 1px solid #9ac2c9;
+  font-weight: 700;
+  
+  cursor: pointer;
+}
+
+@media screen and (min-width: 40em){
+  dt {
+    padding: 2rem;
+  }
+}
+
+dt::before {
+  content: attr(data-before);
+  position: absolute;
+  right: 1rem;
+}
+
+@media screen and (min-width: 40em){
+  dt::before  {
+    right: 2rem;
+  }
+}
+
+dt:hover {
+  color: #28D7D4;
+}
+
+dd {
+  max-height: 10rem;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid #9ac2c9;
+  border-top: 0;
+  }
+
+@media screen and (min-width: 40em){
+  dd  {
+    padding: 2rem;
+  }
+}
+
+.toggle-faq {
+  overflow: hidden;
+  max-height: 0px;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.selected-faq {
+  background-color: #46495c;
+  color: #c2dadf;
+}
+
+/* hide form label */
+.form-input label {
+  position: absolute;
+  left: -99999px;
+}
+
+/* class used by JS to hide form elements */
+.hide {
+  display: none;
+}
